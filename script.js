@@ -52,7 +52,7 @@ function game() {
     
             if (result === true) {
                 playerScore++;
-            } else {
+            } else if (result === false) {
                 computerScore++;
             }
             count++;
@@ -61,13 +61,11 @@ function game() {
 
         else if (count === 5) {
             console.log(`You: ${playerScore} Computer: ${computerScore}`);
-            if (playerScore > computerScore) {
-                console.log('You\'re the winner!');
-            } else if (playerScore < computerScore) {
-                console.log('The Computer is the winnner!');
-            } else if (playerScore === computerScore) {
-                console.log('It\'s a tie!');
-            }
+            let winnerMessage = (playerScore === computerScore) ? 'It\'s a tie!' :
+                 (playerScore > computerScore) ? 'You\'re the winner!' : 'The computer is the winner!';
+            
+            console.log(winnerMessage);
+
             keepGoing = false;
         }
     }
