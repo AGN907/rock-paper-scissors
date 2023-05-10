@@ -37,7 +37,7 @@ function playGame(computerSelection, playerSelection) {
         }
 
 function game() {
-    const keepGoing = true;
+    let keepGoing = true;
     let count = 0;
     let playerScore = 0;
     let computerScore = 0;
