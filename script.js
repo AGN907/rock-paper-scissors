@@ -72,6 +72,14 @@ function startGame(e) {
     e.target.parentNode.classList.add('hide')
 }
 
+function checkScores() {
+    if (+playerScore.textContent === 5) {
+        return 'You'
+    } else if (+computerScore.textContent === 5) {
+        return 'The computer'
+    }
+}
+
 
 
 startBtn.addEventListener('click', startGame)
