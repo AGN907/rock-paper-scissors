@@ -67,7 +67,6 @@ function playGame(e) {
 
 }
 
-
 const choices = document.querySelectorAll('.choice')
 
 const startBtn = document.querySelector('#start')
