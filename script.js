@@ -67,6 +67,16 @@ function playGame(e) {
 
 }
 
+function startGame(e) {
+    gameContainer.classList.remove('hide')
+    e.target.parentNode.classList.add('hide')
+}
+
+
+
+startBtn.addEventListener('click', startGame)
+
+
 const choices = document.querySelectorAll('.choice')
 
 const startBtn = document.querySelector('#start')
