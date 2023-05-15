@@ -91,9 +91,7 @@ function checkScores() {
 
 
 
-startBtn.addEventListener('click', startGame)
 
-restartBtn.addEventListener('click', restartGame)
 
 const choices = document.querySelectorAll('.choice')
 
@@ -106,3 +104,6 @@ const gameContainer = document.querySelector('.game-container')
 let playerScore = document.querySelector('#player-score p')
 let computerScore = document.querySelector('#computer-score p')
 choices.forEach(item => item.addEventListener('click', playGame))
+startBtn.addEventListener('click', startGame)
+
+restartBtn.addEventListener('click', restartGame)
