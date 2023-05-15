@@ -72,6 +72,15 @@ function startGame(e) {
     e.target.parentNode.classList.add('hide')
 }
 
+function restartGame() {
+    playerScore.textContent = '0'
+    computerScore.textContent = '0'
+    gameResult.textContent = ''
+    restartBtn.classList.add('hide')
+
+    
+}
+
 function checkScores() {
     if (+playerScore.textContent === 5) {
         return 'You'
@@ -84,6 +93,7 @@ function checkScores() {
 
 startBtn.addEventListener('click', startGame)
 
+restartBtn.addEventListener('click', restartGame)
 
 const choices = document.querySelectorAll('.choice')
 
